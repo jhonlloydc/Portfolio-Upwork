@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/merchantmobile.css">
+    <script src='js/jquery.js'></script>
+    <script src='js/config.js' defer></script>
+    <script src='js/displaymerchants.js' defer></script>
+    <script src='js/main.js' defer></script>
+    <title>Merchant List</title>
+</head>
+<body>
+    <!-- Over Ride Css -->
+    <style>
+        body{
+            background-color: #F5F5F5;
+        }
+    </style>
+
+
+    <!-- Sidebar Overlay -->
+
+    <section class="sidebar box column">
+        <div class="box" style="margin-bottom:10px;justify-content:flex-end;">
+            <h2 id="hide-side-bar" style="cursor:pointer;">x</h2>
+        </div>
+        <div class="box" style="margin-bottom:10px;">
+            <h3>Menu</h3>
+        </div>
+        <div class="box column">
+
+
+            <div class="nav-chat box y-center" style='margin-bottom: 20px;'>
+                <div class="chat-counter">0</div>
+                <img src="img/message.png" alt="" style="width: 50px;">
+                <p style="margin-top: 25px;font-weight:bold">Chat</p>
+            </div>
+            <div class="nav-cart box">
+                <div class="cart-counter">0</div>
+                <img src="img/cart.png" alt="" style="width:50px">
+                <p style="margin-top: 25px;font-weight:bold">Cart</p>
+            </div>
+
+
+        </div>
+        
+    </section>
+
+
+
+
+
+    <!-- Nav Section -->
+    <nav class="">
+        <!-- Icons Box -->
+        <div id="iconbox" class="box" style="width:20%;justify-content: space-evenly;">
+            <div class="nav-chat box y-center">
+                <div class="chat-counter">0</div>
+                <img src="img/message.png" alt="" style="width: 50px;">
+                <p style="margin-top: 25px;font-weight:bold">Chat</p>
+            </div>
+            <div class="nav-cart box">
+                <div class="cart-counter">0</div>
+                <img src="img/cart.png" alt="" style="width:50px">
+                <p style="margin-top: 25px;font-weight:bold">Cart</p>
+            </div>
+            
+        </div>
+        <!-- Search Bar -->
+        <div id="searchbox" class="box">
+            <input type="text" name="" placeholder="Search" id="" style="padding: 10px;font-weight: bold;border:2px solid grey;border-radius: 5px;width:80%;height: 100%;margin-top: 5px;">
+        </div>
+        <!-- Action Box -->
+
+        <div id="nav-actionbox" class="box y-center">
+            <p>Create Post</p>
+            <img id="hamburger" src="img/hamburger.png" alt="" style="width:30px;cursor:pointer">
+        </div>
+
+    </nav>
+
+
+    <!-- Body -->
+    <section>
+
+        <!-- Filter Header -->
+        <div class="box" style="width:auto;justify-content: flex-end;margin-top: 30px;padding-right: 30px;">
+            <button class="box y-center" style="border-style: none;padding: 10px;font-family: DM Sans;font-weight: bold;background-color: rgba(0,0,0,0);">
+                <p style="margin-right: 5px;">Select City</p>
+                <img src="img/dropdown.png" alt="" style="width:15px;">
+            </button>
+            <button class="box y-center" style="border-style: none;padding: 10px;font-family: DM Sans;font-weight: bold;background-color: rgba(0,0,0,0);">
+                <p style="margin-right: 5px;">Select Barangay</p>
+                <img src="img/dropdown.png" alt="" style="width:15px;">
+            </button>
+        </div>
+        <!-- List Container -->
+        <div id="merchantlist" class="" style="padding-left: 20px;padding-right: 20px;margin-top: 30px;margin-bottom:100px;display:flex;flex-wrap: wrap; justify-content: space-evenly;">
+
+            <div class="box merchant-box column">
+
+                <div class="box y-center" style="height: 20%;padding-left: 10px;">
+                    <img src="img/merchantprofile.png" alt="" style="height: 50px;width:50px;margin-right:10px;">
+                    
+                    <div class="box column x-center">
+                        <p style="font-weight: bold;">Store Name</p>
+                        <div class="box y-center">
+                            <img src="img/loc.png" alt="" style="width:10px;height: 10px;margin-right: 5px;">
+                            <p style="font-size: 10px;">San Isidro</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box" style="height: 10%;padding-left: 10px;">
+                    <p style="font-size: 14px;">This is a text description of this merchant.</p>
+                </div>
+
+                <div class="box" style="height: 45%">
+                    <img src="img/sampleimage.png" alt="" style="width: 100%;object-fit: cover;">
+                </div>
+
+                <div class="box y-center x-center" style="width:100%;height: 10%;">
+                    <h4>1.5 Million Followers</h4>
+                </div>
+
+                <div class="grey-line"></div>
+                <div class="box" style="height: 14%;width: 100%;">
+                    
+                    <button class="box y-center" style="width:61%;height:auto;border-style: none;border-radius: 0px 5px 0px 0px;justify-content: space-evenly;">
+                        <p style="font-weight: bold;font-size: 12px;">Recommended</p>
+                        <img src="img/Leaf Person Icon.png" alt="" style="height: 30px;">
+                        <p>144</p>
+                    </button>
+                    <div class="vertical-line"></div>
+                    <button class="box y-center" style="width:40%;height:100%;border-style: none;background-color: #18829C;border-radius: 0px 0px 5px 0px;justify-content: space-evenly;">
+                        <img src="img/eye.png" alt="" style="height:20px;">
+                        <p style="font-weight: bold;color:white;">View Store</p>
+                    </button>
+                </div>
+            </div>
+
+            
+            
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <!-- other details -->
+        <div id="footer-details" class="box column">
+            <div class="box column">
+                <img src="img/logo-2.svg" alt="" style="width:150px;margin-bottom:10px;">
+                <p style="margin-bottom:10px;font-size: 15px;" class="bold">Help your near community</p>
+                <p style="margin-bottom:10px;">Dummy Street, Cabuyao City Province of Laguna</p>
+                
+            </div>
+            <div class="box column">
+                <div class="box">
+                    <p style="margin-bottom:10px;">Follow us! on our social media accounts</p>
+                </div>
+                <div id="footer-icons" class="box">
+                
+                    <img src="img/fb.svg" alt="">
+                    <img src="img/instagram.svg" alt="">
+                    <img src="img/twitter.svg" alt="">
+                </div>
+            </div>
+            
+        </div>
+        <!-- quick links -->
+        <div id="quicklinks" class="box">
+            <div class="box column">
+                <h5>About</h5>
+                <p>Brand Story</p>
+                <p>Location</p>
+                <p>Careers</p>
+            </div>
+
+            <div class="box column">
+                <h5>What's new</h5>
+                <p>How to order</p>
+                <p>How to refund</p>
+                <p>Top up</p>
+                <p>Promotions</p>
+            </div>
+
+            <div class="box column">
+                <h5>What's new</h5>
+                <p>Financial</p>
+                <p>Grow Business</p>
+                <p>Cash Out</p>
+                <p>Promotions</p>
+            </div>
+
+            <div class="box column">
+                <h5>What's new</h5>
+                <p>Financial</p>
+                <p>Perks</p>
+                <p>Cash Out</p>
+                <p>Promotions</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
